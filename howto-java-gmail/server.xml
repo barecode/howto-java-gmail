@@ -1,0 +1,9 @@
+<server description="howto-java-gmail">
+
+	<!-- Enable features -->
+	<featureManager>
+		<feature>javaMail-1.5</feature>
+		<feature>servlet-3.1</feature>
+	</featureManager>
+
+</server>

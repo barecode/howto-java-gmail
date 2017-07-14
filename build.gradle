@@ -1,0 +1,12 @@
+apply plugin: 'war'
+apply plugin: 'eclipse'
+
+defaultTasks 'clean', 'build'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'javax:javaee-api:7.0'
+}
