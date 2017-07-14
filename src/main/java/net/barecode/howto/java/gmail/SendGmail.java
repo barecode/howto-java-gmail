@@ -30,7 +30,7 @@ public class SendGmail extends HttpServlet {
 	private final String gmail_user = "";
 	private final String gmail_password = "";
 
-	public SendEmail() {
+	public SendGmail() {
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
@@ -63,7 +63,6 @@ public class SendGmail extends HttpServlet {
 			message.setText("Hi there, this is a test message sent frmo Java!");
 
 			Transport.send(message);
-			result = true;
 		} catch (AddressException e) {
 			System.out.println("AddressException during sendMail");
 			e.printStackTrace();
